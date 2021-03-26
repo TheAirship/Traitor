@@ -1,10 +1,11 @@
-Attribute VB_Name = "Module1"
+Attribute VB_Name = "Traitor"
+
 ' Traitor! - An experimental password cracker for Excel files, written in VBA
 '
 ' Copyright (c) 2020-2021 Craig Jackson
 '
 ' DISCLAIMER - Traitor! was created for authorized personal and professional testing. Using it to attack targets without prior mutual consent is illegal.
-' It is the end user’s responsibility to obey all applicable local, state, and federal laws. The author(s) assume no liability and are not responsible
+' It is the end userâ€™s responsibility to obey all applicable local, state, and federal laws. The author(s) assume no liability and are not responsible
 ' for any misuse or damage caused by this tool.
 
 Public formStart As Boolean, endAll As Boolean
