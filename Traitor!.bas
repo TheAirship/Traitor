@@ -78,8 +78,8 @@ If formStart = False Then
 
     tgtType = "File" ' Target Type
     attType = "Brute" ' Attack Type
-    tgtPath = "C:\Users\cjackson\Desktop\ThisisaTest.xlsx" ' Target Path
-    pwdPath = "C:\Users\cjackson\Desktop\testpwds2.txt" ' Path to password dictionary file; fully-qualify path
+    tgtPath = "C:\Users\example\Desktop\testfile.xlsx" ' Target Path
+    pwdPath = "C:\Users\example\Desktop\testpwds.txt" ' Path to password dictionary file; fully-qualify path
     impWrds = True ' Import wordlist or run from TextStream object?
     delWrds = False ' Automatically delete pwList sheet when complete?
     chkCaps = False ' Include caps if brute forcing
