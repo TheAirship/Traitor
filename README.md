@@ -1,4 +1,4 @@
-# Traitor! - An experimental Excel-based password cracker for Excel files.
+# Traitor! - An experimental Excel-based password cracker for Excel files
 *Emphasis on the 'experimental'*
 
 Traitor! was born out of years of telling customers that storing passwords in Excel spreadsheets, password-protected or otherwise, isn't the best idea there's ever been. After some casual remarks about how it was probably possible to use Excel's VBA backend to crack a password on another Excel file, I decided to see if that was actually feasible.
@@ -46,7 +46,5 @@ Method #3 is by far the easiest. Simply download and open the pre-built Traitor!
 * Unless you know that the person who locked the spreadsheet or workbook creates terrible passwords, you're almost always going to be better off using the dictionary attack mode. The brute force attack mode does work, but it iterates passwords sequentially and lacks any sort of advanced password format features (e.g., John rules or Hashcat masks).
 
 ## About / Licensing
-
-If you've followed the installation and use instructions above along with the guidelines
 
 Questions, comments, feedback, and feature requests can be submitted to infosec@theairship.cloud. Also, I'd love to know if someone actually manages to use Traitor! to crack an Excel file, worksheet, or workbook during a pen test or red team exercise.
