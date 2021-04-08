@@ -1,16 +1,17 @@
-# Traitor! - An experimental Excel password cracker written in VBA.
+# Traitor! - An experimental Excel-based password cracker for Excel files.
+*Emphasis on the 'experimental'*
 
-Traitor! is an experiment born out of years of telling client that storing passwords in Excel spreadsheets, password-protected or otherwise, is not a secure practice. After repeated comments about how VBA could theoretically be used to crack passwords, I decided to test that theory. You can read my blog post with the full back story here.
+Traitor! was born out of years of telling customers that storing passwords in Excel spreadsheets, password-protected or otherwise, isn't the best idea there's ever been. After some casual remarks about how it was probably possible to use Excel's VBA backend to crack a password on another Excel file, I decided to see if that was actually feasible.
 
 Traitor! is made available here for testing and tinkering. Some general disclaimers:
 
-* In almost every case, there are better methods for bypassing protections on Excel files. This was an experiment, not an effort to create an industry-standard tool.
+* In almost every case, there are better methods to bypass protections on Excel files. This was an experiment, not an effort to create an industry-standard tool.
 * Traitor! is a script, and any script has the potential to be malicious. If you're not comfortable using a pre-packaged macro-enabled Excel workbook created by a guy who uses a hand-drawn cartoon seagull as his GitHub avatar, review the source code and use installation / use methods #1 or #2 listed below.
 * Traitor! was created for authorized personal and professional testing. Using it to attack targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state, and federal laws. The author(s) assume no liability and are not responsible for any misuse or damage caused by this tool.
 
 ## Installation
 
-Traitor! is VBA script, so it doesn't need to be installed, but it does require a recent version of Microsoft Excel installed and available. There are three main ways to prepare Traitor! for use:
+Traitor! is VBA script, so it doesn't need to be installed, but you do need to have a recent version of Microsoft Excel available. There are three main ways to prepare Traitor! for use:
 
 1. Import VBA script only (if you're very comfortable with VBA editor and scripting)
     * Download the Traitor!.bas file, or just clone the entire repo
@@ -27,13 +28,15 @@ Traitor! is VBA script, so it doesn't need to be installed, but it does require 
 
 ## Use
 
-Insert TraitorVariables screenshot here
+![helpimage](https://github.com/TheAirship/Traitor/blob/main/Images/TraitorVariables.png)
 
 If you plan to use method #1 above, locate the user options section of the script as shown in the screenshot above. Make sure all variables listed in that section have values of the expected type and range. Then execute the "main" sub by selecting anywhere in the that sub's code and pressing the F5 key, or by selecting 'Run' from the VBA editor menu.
 
-If you plan to use method #2, you can still manually adjust the variables in user options section by following the instructions for method #1 above. Alternatively, if you've loaded the ControlForm userform and want to use that instead, right-click on the ControlForm userform object in the VBA editor and select "View Code" locate the Private Sub called "openControlForm" in the code for that userform, select anywhere in that sub and press the F5 key. Make your selections in the ControlForm and click the "Go" button.
+![helpimage](https://github.com/TheAirship/Traitor/blob/main/Images/TraitorForm.PNG)
 
-Method #3 is by far the easiest. Simply download and open the pre-built Traitor! spreadsheet and click the "Click here to start." button to open the ControlForm user form. Make your selections and click the "Go" button.
+If you plan to use method #2, you can still adjust the variables in user options section by following the instructions for method #1 above. Alternatively, if you've loaded the ControlForm userform and want to use that instead, right-click on the ControlForm userform object in the VBA editor and select "View Code" locate the Private Sub called "openControlForm" in the code for that userform, select anywhere in that sub and press the F5 key. Make your selections in the ControlForm and click the "Go" button.
+
+Method #3 is by far the easiest. Simply download and open the pre-built Traitor! workbook and click the "Click here to start." button to open the ControlForm user form. Make your selections and click the "Go" button.
 
 ## Tips
 
@@ -44,6 +47,6 @@ Method #3 is by far the easiest. Simply download and open the pre-built Traitor!
 
 ## About / Licensing
 
-If you've followed the installation and use instructions above along with the guidelines in the script and you've still hit a bug or error, please submit an issue on GitHub.
+If you've followed the installation and use instructions above along with the guidelines
 
-Questions, comments, feedback, and feature requests can be submitted to infosec@theairship.cloud. Success stories are welcome too, if it ever happens.
+Questions, comments, feedback, and feature requests can be submitted to infosec@theairship.cloud. Also, I'd love to know if someone actually manages to use Traitor! to crack an Excel file, worksheet, or workbook during a pen test or red team exercise.
